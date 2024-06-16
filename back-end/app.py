@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+from models.catalogue import Model
 
 app = FastAPI()
 
@@ -12,6 +13,11 @@ class CatalogueModel(BaseModel):
 def read_root():
     return {"Hello": "World"}
 
+@app.get('/models')
+def models():
+    models = Model.find_all()
+
+    return models
 @app.get('/catalogue')
 def get_catalogues():
     return[{"name":"Yamaha R6"}]
