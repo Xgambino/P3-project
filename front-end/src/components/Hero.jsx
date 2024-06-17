@@ -11,7 +11,7 @@ const Hero = ({heroData,setHeroCount,heroCount,setPlayStatus,playStatus}) => {
         </div>
         <div className="hero-explore">
             <p>Explore The World</p>
-            <img width="64" height="64" src="https://img.icons8.com/laces/64/circled-chevron-up.png" alt="circled-chevron-up"/>
+            <img width="64" height="64" src="https://img.icons8.com/nolan/64/circled-right-2.png" alt="circled-right-2"/>
         </div>
         <div className="hero-dot-play">
             <ul className="hero-dots">
